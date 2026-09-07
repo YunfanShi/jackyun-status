@@ -1,31 +1,103 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: YunfanShi
+repo: jackyun-status
+user-agent: YunfanShi
+
+# No endpoint or notification secrets are passed into generated workflows.
+secrets: []
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: JackYun Portal
+    url: https://jackyun.top
+    maxResponseTime: 5000
+  - name: 应用与数据库
+    url: https://jackyun.top/api/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
+    __dangerous__body_down_if_text_missing: '"status":"ok"'
+
+assignees:
+  - YunfanShi
+
+# Keep short incidents in the public history instead of deleting them.
+skipDeleteIssues: true
+skipDescriptionUpdate: true
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.jackyun.top
+  logoUrl: https://raw.githubusercontent.com/YunfanShi/YunfanShi.github.io/main/Webicon.png
+  favicon: https://raw.githubusercontent.com/YunfanShi/YunfanShi.github.io/main/Webicon.png
+  name: JackYun 服务状态
+  introTitle: "**JackYun** 服务运行状态"
+  introMessage: 这里展示 JackYun Portal 及其核心依赖的实时可用性、响应时间和历史故障记录。
+  theme: light
   navbar:
-    - title: Status
+    - title: 服务状态
       href: /
+    - title: 返回主站
+      href: https://jackyun.top
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  activeIncidents: 当前故障
+  allSystemsOperational: 所有服务运行正常
+  incidentReport: "查看故障 #$NUMBER 报告 →"
+  activeIncidentSummary: 于 $DATE 开始，已有 $POSTS 条更新
+  incidentTitle: 故障 $NUMBER 详情
+  incidentDetails: 故障详情
+  incidentFixed: 已修复
+  incidentOngoing: 处理中
+  incidentOpenedAt: 开始时间
+  incidentClosedAt: 恢复时间
+  incidentViewOnGitHub: 在 GitHub 查看并订阅
+  incidentCommentSummary: $AUTHOR 发布于 $DATE
+  incidentBack: "← 返回所有故障"
+  pastIncidents: 历史故障
+  pastIncidentsResolved: 在 $MINUTES 分钟内恢复，共 $POSTS 条更新
+  liveStatus: 实时状态
+  overallUptime: "总体可用率：$UPTIME"
+  overallUptimeTitle: 总体可用率
+  averageResponseTime: "平均响应时间：$TIMEms"
+  averageResponseTimeTitle: 平均响应时间
+  sevelDayResponseTime: 7 天响应时间
+  responseTimeMs: 响应时间（毫秒）
+  up: 正常
+  down: 故障
+  degraded: 性能下降
+  ms: 毫秒
+  loading: 加载中
+  navGitHub: GitHub
+  footer: 本状态页[开放源码]($REPO)，由 [Upptime](https://upptime.js.org) 提供支持
+  rateLimitExceededTitle: 请求频率已达上限
+  rateLimitExceededIntro: GitHub API 请求次数已达上限，请稍后再试。
+  rateLimitExceededWhatDoesErrorMean: 这是什么意思？
+  rateLimitExceededErrorMeaning: 本页使用 GitHub API 获取实时服务状态，当前 IP 地址的免费请求额度已用完。
+  rateLimitExceededErrorHowCanFix: 如何解决？
+  rateLimitExceededErrorFix: 请等待额度自动恢复，或使用 GitHub Personal Access Token 提高额度。
+  rateLimitExceededGeneratePAT: 了解如何生成 Personal Access Token
+  rateLimitExceededHasSet: 已设置 Personal Access Token。
+  rateLimitExceededRemoveToken: 移除 Token
+  rateLimitExceededGitHubPAT: GitHub Personal Access Token
+  rateLimitExceededCopyPastePAT: 粘贴你的 Token
+  rateLimitExceededSaveToken: 保存 Token
+  errorTitle: 发生错误
+  errorIntro: 获取最新服务状态时发生错误。
+  errorText: 请稍后重试。
+  errorHome: 返回首页
+  pastScheduledMaintenance: 历史计划维护
+  scheduledMaintenance: 计划维护
+  scheduledMaintenanceSummaryStarted: 于 $DATE 开始，持续 $DURATION 分钟
+  scheduledMaintenanceSummaryStarts: 将于 $DATE 开始，持续 $DURATION 分钟
+  startedAt: 开始于
+  startsAt: 开始时间
+  duration: 持续时间
+  durationMin: $DURATION 分钟
+  incidentCompleted: 已完成
+  incidentScheduled: 已计划
+  duration24H: 24 小时
+  duration7D: 7 天
+  duration30D: 30 天
+  duration1Y: 1 年
+  durationAll: 全部
+  locale: zh-CN
