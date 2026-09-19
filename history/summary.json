@@ -4,21 +4,21 @@
     "url": "https://jackyun.top",
     "icon": "https://icons.duckduckgo.com/ip3/jackyun.top.ico",
     "slug": "jack-yun-portal",
-    "status": "down",
-    "uptime": "96.96%",
-    "uptimeDay": "97.69%",
-    "uptimeWeek": "94.79%",
-    "uptimeMonth": "96.96%",
-    "uptimeYear": "96.96%",
-    "time": 2797,
-    "timeDay": 3209,
-    "timeWeek": 2639,
-    "timeMonth": 2797,
-    "timeYear": 2797,
+    "status": "up",
+    "uptime": "94.55%",
+    "uptimeDay": "68.75%",
+    "uptimeWeek": "90.41%",
+    "uptimeMonth": "94.55%",
+    "uptimeYear": "94.55%",
+    "time": 2861,
+    "timeDay": 3835,
+    "timeWeek": 2790,
+    "timeMonth": 2861,
+    "timeYear": 2861,
     "dailyMinutesDown": {
       "2026-09-18": 392,
       "2026-09-17": 125,
-      "2026-09-19": 9
+      "2026-09-19": 450
     }
   },
   {
@@ -26,21 +26,21 @@
     "url": "https://jackyun.top/api/health",
     "icon": "https://icons.duckduckgo.com/ip3/jackyun.top.ico",
     "slug": "应用与数据库",
-    "status": "down",
-    "uptime": "97.06%",
-    "uptimeDay": "98.28%",
-    "uptimeWeek": "94.97%",
-    "uptimeMonth": "97.06%",
-    "uptimeYear": "97.06%",
-    "time": 1220,
-    "timeDay": 1112,
-    "timeWeek": 1220,
-    "timeMonth": 1220,
-    "timeYear": 1220,
+    "status": "up",
+    "uptime": "94.65%",
+    "uptimeDay": "69.35%",
+    "uptimeWeek": "90.59%",
+    "uptimeMonth": "94.65%",
+    "uptimeYear": "94.65%",
+    "time": 1196,
+    "timeDay": 699,
+    "timeWeek": 1172,
+    "timeMonth": 1196,
+    "timeYear": 1196,
     "dailyMinutesDown": {
       "2026-09-18": 392,
       "2026-09-17": 115,
-      "2026-09-19": 0
+      "2026-09-19": 441
     }
   }
 ]
