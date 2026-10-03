@@ -1,7 +1,7 @@
 url: https://jackyun.top/api/health
-status: down
-code: 503
-responseTime: 8223
-lastUpdated: 2026-10-03T01:47:44.487Z
+status: up
+code: 200
+responseTime: 1053
+lastUpdated: 2026-10-03T07:59:29.024Z
 startTime: 2026-09-07T06:09:07.294Z
 generator: Upptime <https://github.com/upptime/upptime>
