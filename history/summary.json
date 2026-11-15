@@ -11,7 +11,7 @@
     "uptimeMonth": "99.05%",
     "uptimeYear": "95.51%",
     "time": 3125,
-    "timeDay": 884,
+    "timeDay": 818,
     "timeWeek": 1005,
     "timeMonth": 2193,
     "timeYear": 3125,
@@ -35,13 +35,13 @@
     "icon": "https://icons.duckduckgo.com/ip3/jackyun.top.ico",
     "slug": "应用与数据库",
     "status": "down",
-    "uptime": "95.15%",
-    "uptimeDay": "73.03%",
-    "uptimeWeek": "96.15%",
-    "uptimeMonth": "98.17%",
-    "uptimeYear": "95.15%",
+    "uptime": "95.03%",
+    "uptimeDay": "64.06%",
+    "uptimeWeek": "94.87%",
+    "uptimeMonth": "97.87%",
+    "uptimeYear": "95.03%",
     "time": 2150,
-    "timeDay": 8762,
+    "timeDay": 11080,
     "timeWeek": 4900,
     "timeMonth": 2324,
     "timeYear": 2150,
@@ -58,7 +58,7 @@
       "2026-10-07": 13,
       "2026-10-17": 414,
       "2026-11-14": 388,
-      "2026-11-15": 0
+      "2026-11-15": 129
     }
   }
 ]
